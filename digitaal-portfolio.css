@@ -1,0 +1,82 @@
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+@media only screen and (max-width: 1050px) {
+  a{
+    display: block;
+    width: auto;
+    float: none;
+      
+  }
+}
+
+body {
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: url(portfolio-background.png);
+}
+
+main p {
+  color: white;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif; 
+  padding: 0px 30px;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 400px;
+  height: 600px;
+  overflow-y: scroll;
+  text-align: center;
+  border: 1px #FFFFFF solid;
+  margin-top:30px; 
+  margin-left:30px;
+  position: relative;
+  flex: 1;
+  
+}
+
+main img {
+  margin-top: 21px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 1px #FFFFFF solid;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white; 
+}
+
+body a {
+  border: 1px solid white;
+  padding: 15px 30px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: fadein 0.3s;
+}
+
+@keyframes fadein {
+    from { background-color: rgba(255, 255, 255, 0.0); }
+    to   { background-color: rgba(255, 255, 255, 0.2); }
+
+#flex-container {
+  display: flex;
+}
+
+#flex-item {
+
+}
