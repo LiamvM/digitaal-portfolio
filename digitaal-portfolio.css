@@ -1,20 +1,15 @@
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Open Sans', sans-serif;*/
-@media only screen and (max-width: 1050px) {
-  a{
-    display: block;
-    width: auto;
-    float: none;
-      
-  }
-}
+
 
 body {
+  background-color: black;
   background-repeat: no-repeat;
   position: relative;
   margin: 0;
   padding: 0;
   background-image: url(portfolio-background.png);
+  background-size: 100%;
 }
 
 main p {
@@ -27,14 +22,13 @@ main p {
 main {
   background-color: rgba(255, 255, 255, 0.2);
   width: 400px;
-  height: 600px;
+  height: 500px;
   overflow-y: scroll;
   text-align: center;
   border: 1px #FFFFFF solid;
   margin-top:30px; 
   margin-left:30px;
   position: relative;
-  flex: 1;
   
 }
 
@@ -57,11 +51,13 @@ body a {
   color: white;
   font-family: 'Raleway', sans-serif;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 43%;
   font-size: 20px;
   text-decoration: none;
   transition: 0.3s;
+  z-index: 10;
+  text-align: center;
 }
 
 a:hover {
@@ -70,13 +66,19 @@ a:hover {
 }
 
 @keyframes fadein {
-    from { background-color: rgba(255, 255, 255, 0.0); }
-    to   { background-color: rgba(255, 255, 255, 0.2); }
-
-#flex-container {
-  display: flex;
+  from { background-color: rgba(255, 255, 255, 0.0); }
+  to   { background-color: rgba(255, 255, 255, 0.2); } 
 }
 
-#flex-item {
-
+@media screen and (max-width: 1050px) {
+  
+  
+  body a {
+  position: absolute;
+  top: 529px;
+  left: 130px;
+  text-align: center;
+  }
 }
+
+
